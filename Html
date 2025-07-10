@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tag Math Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="screen-kit" class="screen active">
+    <h1>Pick a Kit</h1>
+    <div class="kit-buttons">
+      <button data-kit="multiplication">Multiplication</button>
+      <button data-kit="division">Division</button>
+      <button data-kit="addition">Addition</button>
+      <button data-kit="subtraction">Subtraction</button>
+    </div>
+    <div id="kit-actions" class="hidden">
+      <button id="btn-host">Host Game</button>
+      <button id="btn-join">Join Game</button>
+      <input id="input-code" placeholder="Game Code" maxlength="4">
+    </div>
+  </div>
+
+  <div id="screen-setup" class="screen hidden">
+    <h2 id="setup-title"></h2>
+    <p id="setup-code"></p>
+    <input id="input-name" placeholder="Your Name">
+    <button id="btn-enter">Enter Game</button>
+  </div>
+
+  <div id="screen-game" class="screen hidden">
+    <h2>Code: <span id="game-code"></span> | Time: <span id="timer">5:00</span></h2>
+    <div id="game-area"></div>
+    <button id="btn-question">Answer Question</button>
+    <div id="question-ui" class="hidden">
+      <p id="question-text"></p>
+      <div id="answer-options"></div>
+    </div>
+    <p id="feedback"></p>
+  </div>
+
+  <div id="screen-leaderboard" class="screen hidden">
+    <h1>🏆 Leaderboard</h1>
+    <div id="leaderboard-list"></div>
+    <button id="btn-restart">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
